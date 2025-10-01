@@ -18,7 +18,7 @@ if (!$sqlFile || !file_exists($sqlFile)) {
 $pdo = MySqlConnector::getInstance()->getConnection();
 
 // Lire le fichier
-$sql = file_get_contents(filename: $sqlFile);
+$sql = file_get_contents($sqlFile);
 
 // Séparer les instructions de manière robuste : on split sur ; suivi d'un saut de ligne ou fin de fichier
 $statements = preg_split('/;\\s*\\n/', $sql);
