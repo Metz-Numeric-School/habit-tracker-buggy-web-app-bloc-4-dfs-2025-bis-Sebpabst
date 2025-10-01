@@ -5,9 +5,10 @@ namespace App\Controller\Api;
 use App\Repository\HabitRepository;
 use Mns\Buggy\Core\AbstractController;
 
-class HabitsController extends AbstractController
+class HabitController extends AbstractController
 {
     private HabitRepository $habitRepository;
+
     public function __construct()
     {
         $this->habitRepository = new HabitRepository();

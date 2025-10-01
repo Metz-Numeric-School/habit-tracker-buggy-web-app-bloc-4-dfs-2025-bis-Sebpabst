@@ -8,6 +8,7 @@ use Mns\Buggy\Core\AbstractController;
 class HabitsController extends AbstractController
 {
     private HabitRepository $habitRepository;
+
     public function __construct()
     {
         $this->habitRepository = new HabitRepository();
